@@ -1,0 +1,44 @@
+ID,Category,Component,Description,Quantity,Unit Cost (USD),Total Cost (USD),Notes
+D001,Drone - Frame,Tarot FY690S Hexacopter Frame,690mm carbon fiber foldable hex frame,1,$55,$55,Amazon or Tarot direct
+D002,Drone - Motors,SunnySky X2216 800KV Brushless Motor,3-4S rated up to 700g thrust each,6,$13,$78,Buy as set of 4 + 2 extra
+D003,Drone - ESC,30A ESC BLHeli_S,Active braking firmware for stable hover,6,$10,$60,BLHeli_S or SimonK
+D004,Drone - Props,1045 Propeller Set CW+CCW,10in 4.5 pitch carbon or nylon,3 pairs,$7,$21,Buy 2-3 extra sets
+D005,Drone - FC,Pixhawk 2.4.8 Flight Controller,ArduCopter MAVLink GUIDED mode,1,$80,$80,Avoid cheap clones
+D006,Drone - GPS,Ublox M8N GPS + Compass Module,External compass 2m CEP accuracy,1,$30,$30,Mount away from motors
+D007,Drone - Power,Power Distribution Board PDB,XT60 input BEC output rails,1,$10,$10,—
+D008,Drone - Battery,4S LiPo Battery 6000mAh,14.8V 35C+ XT60 connector,1,$55,$55,Tattu or Gens Ace
+D009,Drone - Charger,ISDT Q6 Plus LiPo Charger,1-6S balance charge and storage mode,1,$40,$40,Essential for safety
+D010,Drone - RC,FlySky FS-i6 RC Transmitter + Receiver,6-channel safety pilot override,1 set,$50,$50,Required for manual override
+D011,Drone - Telemetry,SiK 915MHz Telemetry Radio Pair,Air and ground modules,1 pair,$40,$40,—
+D012,Drone - Power Switch,XT60 Electronic Power Switch,Inline on main LiPo line,1,$10,$10,Rate 60A or higher
+D013,Drone - Computer,Raspberry Pi 4 2GB,Runs the_aviator.py Python firmware,1,$55,$55,4GB also fine
+D014,Drone - Storage,MicroSD Card 32GB Class 10,Raspberry Pi OS and project files,1,$10,$10,—
+D015,Drone - Power Reg,5V 3A UBEC Voltage Regulator,Steps 14.8V to clean 5V for Pi,1,$10,$10,—
+D016,Drone - Camera,Raspberry Pi Camera Module v2,Forward-facing laser dot detection,1,$25,$25,NoIR for IR laser use
+D017,Drone - Camera,Camera Mount Bracket,Forward-facing 5-10 degree down tilt,1,$6,$6,See cad/camera_mount
+D018,Drone - Radio,nRF24L01 Radio Module drone side,2.4GHz wireless receiver,1,$3,$3,Buy 2-3 as spares
+D019,Drone - Capacitor,100uF Electrolytic Capacitor x2,Stabilizes nRF24L01 power,2,$1,$2,Solder to nRF VCC/GND
+D020,Drone - Claw Motor,Acxiico N20 Mini Gear Motor 3-pack,3-6V DC 50-150 RPM,1 pack,$10,$10,50-100 RPM for fragile objects
+D021,Drone - Motor Driver,L298N Mini Dual H-Bridge,Bidirectional motor control 2A max,1,$6,$6,—
+D022,Drone - Claw,3D Printed Claw Mechanism,3-finger PETG downward centre-mount,1,$3,$3,See cad/claw_mechanism
+D023,Drone - Hardware,M2/M3 Hardware Kit,Nylon and metal screws standoffs,1 kit,$8,$8,—
+D024,Drone - Vibration,Vibration Dampening Mounts 25x25mm,Between Pixhawk and frame,2,$6,$12,—
+D025,Drone - Sonar,HC-SR04 Ultrasonic Sensor,Downward-facing object detection,1,$5,$5,—
+D026,Drone - Resistors,1k ohm Resistor,ECHO voltage divider series,1,$1,$1,1/4W standard
+D027,Drone - Resistors,2k ohm Resistor,ECHO voltage divider shunt to GND,1,$1,$1,1/4W standard
+D028,Drone - Misc,Zip Ties Heatshrink Foam Tape,Cable management and mounting,1 kit,$8,$8,—
+D029,Drone - Misc,JST-XH and XT60 Connector Kit,Battery ESC and PDB connections,1 kit,$8,$8,—
+C001,Controller - MCU,Arduino Nano,Reads inputs transmits radio,1,$6,$6,Clone Nano fine here
+C003,Controller - Radio,nRF24L01 Radio Module controller,2.4GHz wireless transmitter,1,$3,$3,Same module as drone
+C004,Controller - Capacitor,100uF Electrolytic Capacitor,Stabilizes nRF24L01 on controller,1,$1,$1,—
+C005,Controller - Laser,5mW Green Laser Pointer Module,Points at target for camera lock,1,$5,$5,532nm green recommended
+C006,Controller - Transistor,2N2222 NPN Transistor,Drives laser from Arduino GPIO,1,$1,$1,—
+C007,Controller - Resistor,1k ohm Resistor,Base resistor for 2N2222,1,$1,$1,—
+C008,Controller - Buttons,Momentary Push Button NO x5,ARM/LAND GRAB RELEASE LASER POWER OFF,5,$1,$5,Panel mount with cap
+C010,Controller - Power,9V Battery and Snap Connector,Powers all controller electronics,1,$4,$4,Alkaline or rechargeable
+C011,Controller - Enclosure,Project Enclosure or 3D Print,Handheld housing,1,$10,$10,See cad/controller_enclosure
+C012,Controller - Misc,Misc Wire Heatshrink PCB,Internal controller wiring,1 kit,$8,$8,—
+,,,,,,,
+,,DRONE SUBTOTAL,,,,~$580,
+,,CONTROLLER SUBTOTAL,,,,~$35,
+,,GRAND TOTAL,,,,~$615,Midpoint estimates

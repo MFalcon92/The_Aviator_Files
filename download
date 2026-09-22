@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Arduino
+build/
+*.elf
+*.hex
+*.map
+
+# KiCad
+*.bak
+*.kicad_prl
+fp-info-cache
+_autosave-*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

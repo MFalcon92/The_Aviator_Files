@@ -1,0 +1,62 @@
+# The Aviator — ArduCopter Parameter File
+# Load via Mission Planner: Config > Full Parameter List > Load from File
+#
+# Platform : Tarot FY690S Hexacopter + Pixhawk 2.4.8
+# Firmware  : ArduCopter 4.x
+#
+# After loading, still run:
+#   - Accelerometer calibration
+#   - Compass calibration
+#   - RC radio calibration
+#   - ESC calibration
+#   - Motor order and spin direction check
+#   - AUTOTUNE flight for PID gains
+
+# ── Frame ────────────────────────────────────────────────────────────────────
+FRAME_CLASS,2           # 2 = Hexacopter
+FRAME_TYPE,0            # 0 = Plus  (change to 1 for X)
+
+# ── MAVLink Serial — Raspberry Pi on TELEM2 ──────────────────────────────────
+SERIAL2_BAUD,57
+SERIAL2_PROTOCOL,2
+
+# ── Safety / Arming ──────────────────────────────────────────────────────────
+ARMING_CHECK,1
+FS_THR_ENABLE,1
+FS_THR_VALUE,975
+FS_BATT_ENABLE,1
+FS_BATT_VOLTAGE,14.0
+FS_BATT_MAH,500
+
+# ── Altitude Fence ───────────────────────────────────────────────────────────
+FENCE_ENABLE,1
+FENCE_TYPE,1            # Altitude only
+FENCE_ALT_MAX,3         # 3m indoor — increase for outdoor use
+
+# ── GUIDED Mode ──────────────────────────────────────────────────────────────
+GUIDED_OPTIONS,0
+WPNAV_SPEED,150
+WPNAV_SPEED_UP,100
+WPNAV_SPEED_DN,50
+WPNAV_ACCEL,100
+
+# ── PID Gains (starting values — tune with AUTOTUNE) ─────────────────────────
+ATC_ANG_RLL_P,4.5
+ATC_ANG_PIT_P,4.5
+ATC_ANG_YAW_P,4.5
+ATC_RAT_RLL_P,0.135
+ATC_RAT_RLL_I,0.135
+ATC_RAT_RLL_D,0.0036
+ATC_RAT_PIT_P,0.135
+ATC_RAT_PIT_I,0.135
+ATC_RAT_PIT_D,0.0036
+ATC_RAT_YAW_P,0.18
+ATC_RAT_YAW_I,0.018
+
+# ── Battery Monitor ──────────────────────────────────────────────────────────
+BATT_MONITOR,4
+BATT_CAPACITY,6000
+BATT_ARM_VOLT,14.8
+
+# ── Logging ──────────────────────────────────────────────────────────────────
+LOG_BITMASK,65535
