@@ -7,17 +7,17 @@
 
 ## What It Does
 
-The Aviator is a fully autonomous hexacopter with a motorised grabbing claw, controlled by a custom handheld wireless controller. It uses a forward-facing camera to lock onto a laser dot and a downward-facing ultrasonic sonar to detect and grab everyday objects — staplers, apples, a glass of water — without any direct piloting.
+The Aviator is a fully autonomous hexacopter with a motorised grabbing claw, controlled by a custom handheld wireless controller. It uses a forward-facing camera to lock onto a laser dot and a downward-facing ultrasonic sonar to detect and grab everyday objects; staplers, apples, a glass of water; without any direct piloting.
 
 **The grab sequence:**
 
 1. Point the laser at the target object
-2. The drone's camera locks onto the dot — **TARGET LOCKED** shows on the HUD
+2. The drone's camera locks onto the dot; **TARGET LOCKED** shows on the HUD
 3. Press **GRAB**
 4. Drone aligns left/right with the dot, climbs to 5 inches above object height, and flies forward
-5. Sonar detects object below (reads ≤ 6.5in) — drone stops directly above
+5. Sonar detects object below (reads ≤ 6.5in); drone stops directly above
 6. Claw opens, drone descends slowly
-7. Sonar reads ≤ 2cm to object — claw closes and grabs
+7. Sonar reads ≤ 2cm to object; claw closes and grabs
 8. Drone ascends 5 inches, returns home, hovers
 9. Press **RELEASE** to drop
 
